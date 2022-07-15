@@ -160,6 +160,13 @@ ul {
   cursor: pointer;
 }
 
+.icons-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
 .lorem-ipsum-list {
   list-style-type: none;
   display: flex;
