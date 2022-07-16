@@ -97,6 +97,7 @@ ul {
 .envelope,
 .smartphone {
   margin-right: 10px;
+  color: var(--brand-color-text);
 }
 
 .mail {
@@ -113,10 +114,17 @@ ul {
   color: var(--brand-color-text);
 }
 
-.mail:hover,
-.telephone:hover {
+.envelope-mail:hover,
+.envelope-mail:focus,
+.smartphone-telephone:hover,
+.smartphone-telephone:focus {
   color: var(--brand-color);
 }
+
+/* .mail:hover,
+.telephone:hover {
+  color: var(--brand-color);
+} */
 
 .main-header {
   background-color: var(--brand-color-background-1);
