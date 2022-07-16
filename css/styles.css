@@ -264,6 +264,12 @@ ul {
 
 .clients-list-item {
   color: var(--brand-color-icons);
+  border: 1px solid var(--brand-color-icons);
+  border-radius: 4px;
+}
+
+.clients-list-icon {
+  --icon-color: currentColor;
 }
 
 .studio-footer {
