@@ -94,6 +94,11 @@ ul {
   color: var(--brand-color-header);
 }
 
+.envelope-link,
+.smartphone-link {
+  text-decoration: none;
+}
+
 .envelope,
 .smartphone {
   margin-right: 10px;
@@ -114,17 +119,15 @@ ul {
   color: var(--brand-color-text);
 }
 
-.envelope-mail:hover,
-.envelope-mail:focus,
-.smartphone-telephone:hover,
-.smartphone-telephone:focus {
+.mail:hover,
+.mail:focus,
+.telephone:hover,
+.telephone:focus .envelope-link:hover,
+.envelope-link:focus,
+.smartphone-link:hover,
+.smartphone-link:focus {
   color: var(--brand-color);
 }
-
-/* .mail:hover,
-.telephone:hover {
-  color: var(--brand-color);
-} */
 
 .main-header {
   background-color: var(--brand-color-background-1);
@@ -386,9 +389,19 @@ ul {
   margin: 0;
 }
 
+.figure:hover,
+.figure:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .projects-list {
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.new-orlean {
+  object-position: 0px -40px;
 }
 
 .images-list-item {
