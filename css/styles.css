@@ -74,7 +74,6 @@ ul {
 .header a:hover,
 .header a:focus {
   color: var(--brand-color);
-  cursor: url(../images/icons.svg#icon-finger-1);
 }
 
 .nav-list {
@@ -100,12 +99,6 @@ ul {
   text-decoration: none;
 }
 
-.envelope,
-.smartphone {
-  margin-right: 10px;
-  color: var(--brand-color-text);
-}
-
 .mail {
   margin-right: 30px;
 }
@@ -120,13 +113,24 @@ ul {
   color: var(--brand-color-text);
 }
 
-.mail:hover,
-.mail:focus,
-.telephone:hover,
-.telephone:focus .envelope-link:hover,
-.envelope-link:focus,
-.smartphone-link:hover,
-.smartphone-link:focus {
+.envelope-mail {
+  color: var(--brand-color-text);
+}
+
+.smartphone-telephone {
+  color: var(--brand-color-text);
+}
+
+.envelope,
+.smartphone {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.envelope-mail:hover,
+.envelope-mail:focus,
+.smartphone-telephone:hover,
+.smartphone-telephone:focus {
   color: var(--brand-color);
 }
 
