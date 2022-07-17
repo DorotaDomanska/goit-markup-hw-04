@@ -74,6 +74,7 @@ ul {
 .header a:hover,
 .header a:focus {
   color: var(--brand-color);
+  cursor: url(../images/icons.svg#icon-finger-1);
 }
 
 .nav-list {
@@ -246,7 +247,7 @@ ul {
 
 .figcaption-team {
   text-align: center;
-  padding: 20px 24px;
+  padding: 20px 32px;
 }
 
 .name {
@@ -258,12 +259,25 @@ ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
+
 .social-icons-list-item {
-  background-color: #ffffff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   color: var(--brand-color-icons);
+}
+
+.social-icons-list-icon {
+  margin-top: 12px;
+  fill: currentColor;
+}
+
+.social-icons-list-item:hover,
+.social-icons-list-item:focus {
+  background-color: var(--brand-color);
+  color: #ffffff;
 }
 
 .clients-list {
@@ -280,7 +294,14 @@ ul {
 }
 
 .clients-list-icon {
-  --icon-color: currentColor;
+  fill: currentColor;
+}
+
+.clients-list-item:hover,
+.clients-list-item:focus {
+  border: 1px solid var(--brand-color);
+  color: var(--brand-color);
+  cursor: pointer;
 }
 
 .studio-footer {
@@ -346,6 +367,7 @@ ul {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  margin-top: 12px;
 }
 
 .social-icons-list-footer {
@@ -353,6 +375,25 @@ ul {
   display: flex;
   justify-content: space-between;
   gap: 10px;
+}
+
+.social-icons-list-item-footer {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  text-align: center;
+}
+
+.social-icons-list-icon-footer {
+  margin-top: 12px;
+  fill: #ffffff;
+}
+
+.social-icons-list-item-footer:hover,
+.social-icons-list-item-footer:focus {
+  background-color: var(--brand-color);
 }
 
 .buttons-list {
