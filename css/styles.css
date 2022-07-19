@@ -94,11 +94,6 @@ ul {
   color: var(--brand-color-header);
 }
 
-.envelope-link,
-.smartphone-link {
-  text-decoration: none;
-}
-
 .mail {
   margin-right: 30px;
 }
@@ -113,37 +108,28 @@ ul {
   color: var(--brand-color-text);
 }
 
-.envelope-mail {
-  color: var(--brand-color-text);
-}
-
-.smartphone-telephone {
-  color: var(--brand-color-text);
-}
-
 .envelope,
 .smartphone {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.envelope-mail:hover,
-.envelope-mail:focus,
-.smartphone-telephone:hover,
-.smartphone-telephone:focus {
+.header a:hover,
+.header a:focus {
   color: var(--brand-color);
+  fill: var(--brand-color);
 }
 
 .main-header {
   background-color: var(--brand-color-background-1);
-  background-image: url(../images/new-photo.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      var(--brand-color-background-1),
+      var(--brand-color-background-1)
+    ),
+    url(../images/new-photo.jpg);
   background-size: cover;
   background-position: 0px -150px;
-  /* background-image: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.1),
-    rgba(47, 48, 58, 0.1)
-  ); */
 }
 
 .main-header-items {
@@ -273,6 +259,11 @@ ul {
   color: var(--brand-color-icons);
 }
 
+.social-icons {
+  text-decoration: none;
+  color: currentColor;
+}
+
 .social-icons-list-icon {
   margin-top: 12px;
   fill: currentColor;
@@ -295,6 +286,10 @@ ul {
   color: var(--brand-color-icons);
   border: 1px solid var(--brand-color-icons);
   border-radius: 4px;
+}
+
+.client-link {
+  color: currentColor;
 }
 
 .clients-list-icon {
