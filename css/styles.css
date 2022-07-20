@@ -18,6 +18,11 @@ ul {
   margin: 0;
 }
 
+p {
+  padding: 0;
+  margin: 0;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -124,8 +129,8 @@ ul {
   background-color: var(--brand-color-background-1);
   background-image: linear-gradient(
       to bottom,
-      var(--brand-color-background-1),
-      var(--brand-color-background-1)
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
     ),
     url(../images/new-photo.jpg);
   background-size: cover;
@@ -237,42 +242,38 @@ ul {
 
 .figcaption-team {
   text-align: center;
-  padding: 20px 32px;
+  padding: 30px 32px;
 }
 
 .name {
   color: var(--brand-color-header);
-  margin-bottom: 16px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .social-icons-list {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
-}
-
-.social-icons-list-item {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: var(--brand-color-icons);
+  margin-top: 16px;
 }
 
 .social-icons {
+  display: flex;
   text-decoration: none;
-  color: currentColor;
+  color: var(--brand-color-icons);
 }
 
 .social-icons-list-icon {
-  margin-top: 12px;
+  padding: 12px;
   fill: currentColor;
 }
 
-.social-icons-list-item:hover,
-.social-icons-list-item:focus {
+.social-icons:hover,
+.social-icons:focus {
   background-color: var(--brand-color);
   color: #ffffff;
+  border-radius: 50%;
 }
 
 .clients-list {
@@ -377,8 +378,6 @@ ul {
 }
 
 .social-icons-list-item-footer {
-  width: 44px;
-  height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
@@ -386,13 +385,8 @@ ul {
 }
 
 .social-icons-list-icon-footer {
-  margin-top: 12px;
+  padding: 12px;
   fill: #ffffff;
-}
-
-.social-icons-list-item-footer:hover,
-.social-icons-list-item-footer:focus {
-  background-color: var(--brand-color);
 }
 
 .buttons-list {
@@ -433,6 +427,7 @@ ul {
 .figure:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .projects-list {
